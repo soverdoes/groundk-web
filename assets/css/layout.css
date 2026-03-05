@@ -1,0 +1,468 @@
+/* FILE: assets/css/layout.css
+   ──────────────────────────────────────────────
+   Container · Grid · Section Spacing · Breakpoints
+   Breakpoints: 1280 / 1024 / 768 / 375
+   ────────────────────────────────────────────── */
+
+/* ============================================
+   1. CONTAINER
+   ============================================ */
+.header-inner,
+.hero-inner,
+.trust-inner,
+.pain-solution-inner,
+.services-overview-inner,
+.operations-highlight-inner,
+.kpi-inner,
+.case-preview-inner,
+.triseup-teaser-inner,
+.final-cta-inner,
+.footer-inner,
+.svc-hub-inner,
+.svc-features-inner,
+.svc-process-inner,
+.svc-gallery-inner,
+.related-cases-inner,
+.cross-link-inner,
+.ops-pillars-inner,
+.ops-detail-inner,
+.ops-flow-inner,
+.ops-visual-inner,
+.sibling-links-inner,
+.case-filter-inner,
+.case-list-inner,
+.case-highlight-inner,
+.tr-overview-inner,
+.tr-features-inner,
+.tr-screenshots-inner,
+.news-list-inner,
+.ir-overview-inner,
+.ir-financials-inner,
+.ir-downloads-inner,
+.ir-contact-inner,
+.rfp-intro-inner,
+.rfp-form-inner,
+.rfp-reassurance-inner,
+.pco-pain-inner,
+.pco-solution-inner,
+.pco-process-inner,
+.footer-cta-content {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: var(--sp-6);
+}
+
+/* Wide container for full-bleed hero */
+.hero-inner {
+  max-width: 1400px;
+}
+
+/* Narrow container for text-centric sections */
+.rfp-form-inner,
+.ir-contact-inner {
+  max-width: 720px;
+}
+
+.final-cta-inner,
+.cross-link-inner,
+.rfp-intro-inner {
+  max-width: 800px;
+}
+
+
+/* ============================================
+   2. SECTION SPACING — Premium vertical rhythm
+   ============================================ */
+section {
+  padding-block: var(--sp-20);
+}
+
+/* Tighter spacing for consecutive sub-sections */
+.sibling-links,
+.cross-link,
+.rfp-reassurance {
+  padding-block: var(--sp-12);
+}
+
+/* Section badge — "OUR SERVICES", "TECHNOLOGY" etc. */
+.section-badge {
+  display: inline-block;
+  padding: var(--sp-1) var(--sp-4);
+  margin-bottom: var(--sp-6);
+  font-size: 0.75rem;
+  font-weight: var(--fw-semibold);
+  letter-spacing: var(--ls-wider);
+  text-transform: uppercase;
+  color: var(--accent-400);
+  background: rgba(6,182,212,0.08);
+  border: 1px solid rgba(6,182,212,0.20);
+  border-radius: var(--radius-full);
+}
+
+/* Section description text */
+.section-desc {
+  margin-top: var(--sp-4);
+  font-size: 1.125rem;
+  color: var(--text-muted);
+  max-width: 60ch;
+}
+
+/* Section heading + desc center alignment (for centered sections) */
+.services-overview-inner,
+.operations-highlight-inner,
+.case-preview-inner,
+.final-cta-inner,
+.cross-link-inner,
+.rfp-intro-inner {
+  text-align: center;
+}
+
+.services-overview-inner .section-desc,
+.operations-highlight-inner .section-desc,
+.final-cta-inner p,
+.cross-link-inner p,
+.rfp-intro-inner p {
+  margin-inline: auto;
+}
+
+/* Section "more" link */
+.section-more {
+  margin-top: var(--sp-10);
+  text-align: center;
+}
+
+/* Main content offset for fixed header */
+main {
+  padding-top: var(--header-h);
+}
+
+
+/* ============================================
+   3. GRID SYSTEMS
+   ============================================ */
+
+/* ── 2-column split (hero, feature cards) ── */
+.hero-inner,
+.triseup-teaser-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sp-12);
+  align-items: center;
+}
+
+/* ── 3-column grid ── */
+.svc-grid,
+.ops-grid,
+.case-grid,
+.solution-map,
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--sp-8);
+  margin-top: var(--sp-10);
+}
+
+/* ── 4-column grid ── */
+.kpi-inner,
+.feat-grid,
+.detail-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--sp-6);
+  margin-top: var(--sp-10);
+}
+
+/* ── 2-column grid ── */
+.ps-grid,
+.sibling-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--sp-8);
+  margin-top: var(--sp-10);
+}
+
+/* ── Pain cards: 3-column ── */
+.pain-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--sp-6);
+  margin-top: var(--sp-10);
+}
+
+/* ── Process steps (horizontal timeline) ── */
+.process-steps,
+.process-timeline {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--sp-6);
+  margin-top: var(--sp-10);
+  counter-reset: step;
+}
+
+/* ── Gallery grid ── */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--sp-4);
+  margin-top: var(--sp-8);
+}
+
+/* ── Screenshot carousel (horizontal scroll) ── */
+.screenshot-carousel {
+  display: flex;
+  gap: var(--sp-6);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: var(--sp-4);
+  margin-top: var(--sp-8);
+  -webkit-overflow-scrolling: touch;
+}
+.screenshot-carousel > * {
+  flex: 0 0 80%;
+  scroll-snap-align: center;
+}
+
+/* ── Feature card with image (alternating layout) ── */
+.svc-feature-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sp-10);
+  align-items: center;
+  margin-bottom: var(--sp-16);
+}
+.svc-feature-card--reverse {
+  direction: rtl;
+}
+.svc-feature-card--reverse > * {
+  direction: ltr;
+}
+
+/* ── Operations pillar cards (alternating) ── */
+.ops-pillar-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sp-10);
+  align-items: center;
+  margin-bottom: var(--sp-16);
+}
+.ops-pillar-card--reverse {
+  direction: rtl;
+}
+.ops-pillar-card--reverse > * {
+  direction: ltr;
+}
+
+/* ── Form rows ── */
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sp-6);
+}
+
+/* ── Footer body ── */
+.footer-body {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: var(--sp-10);
+  padding-block: var(--sp-12);
+}
+
+/* ── Logo strip ── */
+.logo-strip {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: var(--sp-10);
+  margin-top: var(--sp-8);
+}
+
+/* ── Reassurance grid ── */
+.rfp-reassurance-inner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--sp-8);
+  text-align: center;
+}
+
+/* ── IR info grid ── */
+.ir-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--sp-4) var(--sp-10);
+  margin-top: var(--sp-8);
+}
+
+/* ── Checkbox group ── */
+.checkbox-group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--sp-3);
+}
+
+
+/* ============================================
+   4. BREAKPOINTS — responsive overrides
+   ============================================ */
+
+/* ── ≤1280px: Large desktop tweaks ── */
+@media (max-width: 1280px) {
+  .hero-inner,
+  .triseup-teaser-inner {
+    gap: var(--sp-8);
+  }
+}
+
+/* ── ≤1024px: Tablet landscape ── */
+@media (max-width: 1024px) {
+  section {
+    padding-block: var(--sp-16);
+  }
+
+  .kpi-inner,
+  .feat-grid,
+  .detail-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .svc-feature-card,
+  .svc-feature-card--reverse,
+  .ops-pillar-card,
+  .ops-pillar-card--reverse {
+    grid-template-columns: 1fr;
+    direction: ltr;
+  }
+
+  .footer-body {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--sp-8);
+  }
+
+  .screenshot-carousel > * {
+    flex: 0 0 90%;
+  }
+}
+
+/* ── ≤768px: Tablet portrait / Mobile landscape ── */
+@media (max-width: 768px) {
+  :root {
+    --header-h: var(--header-h-mobile);
+  }
+
+  section {
+    padding-block: var(--sp-12);
+  }
+
+  .hero-inner,
+  .triseup-teaser-inner {
+    grid-template-columns: 1fr;
+    gap: var(--sp-8);
+  }
+
+  .svc-grid,
+  .ops-grid,
+  .case-grid,
+  .solution-map,
+  .news-grid,
+  .pain-cards,
+  .rfp-reassurance-inner {
+    grid-template-columns: 1fr;
+    gap: var(--sp-6);
+  }
+
+  .ps-grid,
+  .sibling-grid,
+  .form-row,
+  .checkbox-group {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .kpi-inner,
+  .feat-grid,
+  .detail-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-body {
+    grid-template-columns: 1fr;
+    gap: var(--sp-8);
+  }
+
+  .ir-info {
+    grid-template-columns: 1fr;
+  }
+
+  .logo-strip {
+    gap: var(--sp-6);
+  }
+
+  .process-steps,
+  .process-timeline {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── ≤375px: Small mobile ── */
+@media (max-width: 375px) {
+  html {
+    font-size: 15px;
+  }
+
+  .header-inner,
+  .hero-inner,
+  .trust-inner,
+  .pain-solution-inner,
+  .services-overview-inner,
+  .operations-highlight-inner,
+  .kpi-inner,
+  .case-preview-inner,
+  .triseup-teaser-inner,
+  .final-cta-inner,
+  .footer-inner,
+  .svc-hub-inner,
+  .svc-features-inner,
+  .svc-process-inner,
+  .svc-gallery-inner,
+  .related-cases-inner,
+  .cross-link-inner,
+  .ops-pillars-inner,
+  .ops-detail-inner,
+  .ops-flow-inner,
+  .ops-visual-inner,
+  .sibling-links-inner,
+  .case-filter-inner,
+  .case-list-inner,
+  .case-highlight-inner,
+  .tr-overview-inner,
+  .tr-features-inner,
+  .tr-screenshots-inner,
+  .news-list-inner,
+  .ir-overview-inner,
+  .ir-financials-inner,
+  .ir-downloads-inner,
+  .ir-contact-inner,
+  .rfp-intro-inner,
+  .rfp-form-inner,
+  .rfp-reassurance-inner,
+  .pco-pain-inner,
+  .pco-solution-inner,
+  .pco-process-inner,
+  .footer-cta-content {
+    padding-inline: var(--sp-4);
+  }
+
+  .kpi-inner,
+  .feat-grid,
+  .detail-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .screenshot-carousel > * {
+    flex: 0 0 95%;
+  }
+}

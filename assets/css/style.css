@@ -1,0 +1,10 @@
+/* FILE: assets/css/style.css
+   ──────────────────────────────────────────────
+   GroundK Design System — Entry Point
+   Import order matters: base → layout → components → pages
+   ────────────────────────────────────────────── */
+
+@import url('base.css');
+@import url('layout.css');
+@import url('components.css');
+@import url('pages.css');

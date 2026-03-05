@@ -1,0 +1,478 @@
+<!-- FILE: pages/index.html → / -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>GroundK — 대형 MICE 이동 운영 B2B Mobility Partner</title>
+  <meta name="description" content="GroundK는 대형 MICE·국제행사의 수송·의전·셔틀을 체계적으로 운영하는 B2B 모빌리티 파트너입니다. 실시간 관제, SOP 표준화, 사후 리포트까지.">
+
+  <!-- Canonical / OG -->
+  <link rel="canonical" href="https://groundk.co.kr/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="GroundK — 대형 MICE 이동 운영 파트너">
+  <meta property="og:description" content="24시간 전담 운영 · 실시간 관제 · 표준 SOP · 사후 리포트. PCO·MICE 대행사를 위한 B2B 모빌리티 솔루션.">
+  <meta property="og:url" content="https://groundk.co.kr/">
+  <meta property="og:image" content="https://groundk.co.kr/assets/images/og-home.jpg">
+  <meta property="og:locale" content="ko_KR">
+
+  <!-- Favicon -->
+  <link rel="icon" href="/assets/images/favicon.ico" sizes="any">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+  <!-- ========================================
+       HEADER (partials/header.html 복사)
+       ======================================== -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <a href="/" class="logo" aria-label="GroundK 홈으로 이동">
+        <img src="/assets/images/logo.svg" alt="GroundK" width="160" height="40">
+      </a>
+      <nav class="gnb" aria-label="주 메뉴">
+        <ul class="gnb-list" role="menubar">
+          <li class="gnb-item" role="none"><a href="/pco-mice/" role="menuitem">PCO·MICE</a></li>
+          <li class="gnb-item has-sub" role="none">
+            <a href="/services/" role="menuitem" aria-haspopup="true" aria-expanded="false">서비스</a>
+            <ul class="gnb-sub" role="menu" aria-label="서비스 하위 메뉴">
+              <li role="none"><a href="/services/mega-event-transportation/" role="menuitem">대형행사 수송</a></li>
+              <li role="none"><a href="/services/vip-protocol-chauffeur/" role="menuitem">VIP 의전</a></li>
+              <li role="none"><a href="/services/shuttle-operation/" role="menuitem">셔틀 운영</a></li>
+            </ul>
+          </li>
+          <li class="gnb-item has-sub" role="none">
+            <a href="/operations/" role="menuitem" aria-haspopup="true" aria-expanded="false">운영체계</a>
+            <ul class="gnb-sub" role="menu" aria-label="운영체계 하위 메뉴">
+              <li role="none"><a href="/operations/sop/" role="menuitem">SOP 표준화</a></li>
+              <li role="none"><a href="/operations/control-room/" role="menuitem">실시간 관제</a></li>
+              <li role="none"><a href="/operations/reporting/" role="menuitem">리포팅</a></li>
+            </ul>
+          </li>
+          <li class="gnb-item" role="none"><a href="/case-studies/" role="menuitem">도입사례</a></li>
+          <li class="gnb-item" role="none"><a href="/t-riseup/" role="menuitem">T‑RiseUp</a></li>
+          <li class="gnb-item" role="none"><a href="/newsroom/" role="menuitem">뉴스룸</a></li>
+          <li class="gnb-item" role="none"><a href="/ir/" role="menuitem">IR</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <div class="lang-toggle" role="navigation" aria-label="언어 선택">
+          <a href="/" class="lang-btn active" aria-current="true" lang="ko">KR</a>
+          <span class="lang-divider" aria-hidden="true">|</span>
+          <a href="/en/" class="lang-btn" lang="en">EN</a>
+        </div>
+        <a href="/rfp/" class="btn-primary cta-rfp">제안요청</a>
+      </div>
+      <button class="mobile-toggle" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="mobile-nav">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+    <div id="mobile-nav" class="mobile-nav" aria-hidden="true" role="dialog" aria-label="모바일 메뉴">
+      <nav aria-label="모바일 주 메뉴">
+        <ul class="mobile-nav-list">
+          <li><a href="/pco-mice/">PCO·MICE</a></li>
+          <li>
+            <button class="mobile-sub-toggle" aria-expanded="false">서비스</button>
+            <ul class="mobile-sub">
+              <li><a href="/services/">서비스 전체</a></li>
+              <li><a href="/services/mega-event-transportation/">대형행사 수송</a></li>
+              <li><a href="/services/vip-protocol-chauffeur/">VIP 의전</a></li>
+              <li><a href="/services/shuttle-operation/">셔틀 운영</a></li>
+            </ul>
+          </li>
+          <li>
+            <button class="mobile-sub-toggle" aria-expanded="false">운영체계</button>
+            <ul class="mobile-sub">
+              <li><a href="/operations/">운영체계 전체</a></li>
+              <li><a href="/operations/sop/">SOP 표준화</a></li>
+              <li><a href="/operations/control-room/">실시간 관제</a></li>
+              <li><a href="/operations/reporting/">리포팅</a></li>
+            </ul>
+          </li>
+          <li><a href="/case-studies/">도입사례</a></li>
+          <li><a href="/t-riseup/">T‑RiseUp</a></li>
+          <li><a href="/newsroom/">뉴스룸</a></li>
+          <li><a href="/ir/">IR</a></li>
+        </ul>
+        <a href="/rfp/" class="btn-primary cta-rfp mobile-cta">제안요청</a>
+      </nav>
+    </div>
+  </header>
+  <div class="mobile-bottom-cta" aria-hidden="false">
+    <a href="/rfp/" class="btn-primary cta-rfp">지금 제안요청 하기</a>
+  </div>
+
+
+  <main id="main-content">
+
+    <!-- ============================================================
+         SECTION 1 — HERO: 첫인상 + 핵심 가치 제안
+         설득 포인트: "이 회사가 뭘 해주는지" 3초 안에 전달
+         ============================================================ -->
+    <section class="hero" aria-label="히어로">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            대형 MICE 이동 운영을 완성하는<br>
+            <strong>B2B Mobility Partner</strong>
+          </h1>
+          <p class="hero-sub">
+            24시간 전담 운영 · 실시간 관제 · 표준 SOP · 사후 리포트
+          </p>
+          <div class="hero-actions">
+            <a href="/rfp/" class="btn-primary cta-rfp">제안요청</a>
+            <a href="/services/" class="btn-secondary">서비스 살펴보기</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <!-- 사진: 대형 행사장 앞 차량 대기 / 관제실 전경 등 프리미엄 현장 사진 -->
+          <img src="/assets/images/hero-home.jpg"
+               alt="대형 국제행사 현장에서 운영 중인 GroundK 차량과 운영 인력"
+               loading="eager" width="960" height="540">
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         SECTION 2 — TRUST BAR: 신뢰 인증 / 주요 고객 로고
+         설득 포인트: 사회적 증거 — "이미 이런 곳들이 쓰고 있다"
+         ============================================================ -->
+    <section class="trust-bar" aria-label="주요 고객사">
+      <div class="trust-inner">
+        <p class="trust-label">신뢰할 수 있는 파트너</p>
+        <!-- 로고 스트립 슬롯: 실제 로고 에셋으로 교체 -->
+        <div class="logo-strip" role="list" aria-label="고객사 로고">
+          <div class="logo-item" role="listitem"><img src="/assets/images/clients/logo-placeholder-1.svg" alt="고객사명 1" loading="lazy"></div>
+          <div class="logo-item" role="listitem"><img src="/assets/images/clients/logo-placeholder-2.svg" alt="고객사명 2" loading="lazy"></div>
+          <div class="logo-item" role="listitem"><img src="/assets/images/clients/logo-placeholder-3.svg" alt="고객사명 3" loading="lazy"></div>
+          <div class="logo-item" role="listitem"><img src="/assets/images/clients/logo-placeholder-4.svg" alt="고객사명 4" loading="lazy"></div>
+          <div class="logo-item" role="listitem"><img src="/assets/images/clients/logo-placeholder-5.svg" alt="고객사명 5" loading="lazy"></div>
+          <div class="logo-item" role="listitem"><img src="/assets/images/clients/logo-placeholder-6.svg" alt="고객사명 6" loading="lazy"></div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         SECTION 3 — PAIN → SOLUTION: 문제 제기 → GroundK 해법
+         설득 포인트: 타겟(PCO)의 고통을 짚고, 해결책으로 전환
+         ============================================================ -->
+    <section class="pain-solution" aria-labelledby="ps-heading">
+      <div class="pain-solution-inner">
+        <div class="section-badge">WHY GROUNDK</div>
+        <h2 id="ps-heading">
+          행사 이동 운영,<br>
+          아직도 경험과 감에 의존하고 계신가요?
+        </h2>
+        <div class="ps-grid">
+          <!-- 문제 카드 -->
+          <div class="ps-card ps-pain">
+            <h3>현실의 문제</h3>
+            <ul>
+              <li>수백 대 차량, 수천 명 탑승자 — 엑셀로는 한계</li>
+              <li>현장 돌발 상황에 대응 체계 부재</li>
+              <li>행사 종료 후 데이터 없이 사라지는 운영 노하우</li>
+            </ul>
+          </div>
+          <!-- 해결 카드 -->
+          <div class="ps-card ps-solution">
+            <h3>GroundK의 접근</h3>
+            <ul>
+              <li><strong>SOP 표준화</strong> — 반복 가능한 운영 프로세스</li>
+              <li><strong>실시간 관제</strong> — 차량·인력 위치를 한눈에</li>
+              <li><strong>사후 리포트</strong> — 데이터 기반 개선 제안</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         SECTION 4 — SERVICES OVERVIEW: 핵심 서비스 3종
+         설득 포인트: "뭘 해주는 회사인지" 카드 형태로 명확히
+         ============================================================ -->
+    <section class="services-overview" aria-labelledby="svc-heading">
+      <div class="services-overview-inner">
+        <div class="section-badge">OUR SERVICES</div>
+        <h2 id="svc-heading">
+          기업 보안을 넘어, 이동의 품질을 설계합니다
+        </h2>
+        <div class="svc-grid">
+
+          <!-- 서비스 카드 1: 대형행사 수송 -->
+          <article class="svc-card">
+            <div class="svc-card-photo">
+              <img src="/assets/images/svc-mega-event.jpg"
+                   alt="대형 국제행사 수송 현장 — 버스 대열과 운영 요원"
+                   loading="lazy" width="480" height="320">
+            </div>
+            <div class="svc-card-body">
+              <span class="svc-tag">대형행사 수송</span>
+              <h3>Mega‑Event Transportation</h3>
+              <p>수백 대 차량 동시 운영, 실시간 배차·노선 관제, VIP 동선 분리까지 — 대규모 행사의 이동을 완전하게.</p>
+              <a href="/services/mega-event-transportation/" class="link-arrow" aria-label="대형행사 수송 상세 보기">자세히 보기</a>
+            </div>
+          </article>
+
+          <!-- 서비스 카드 2: VIP 의전 -->
+          <article class="svc-card">
+            <div class="svc-card-photo">
+              <img src="/assets/images/svc-vip.jpg"
+                   alt="VIP 의전 차량 — 프리미엄 세단과 전담 기사"
+                   loading="lazy" width="480" height="320">
+            </div>
+            <div class="svc-card-body">
+              <span class="svc-tag">VIP 의전</span>
+              <h3>VIP Protocol Chauffeur</h3>
+              <p>국빈급 프로토콜 숙지, 전담 기사 배정, 보안 동선 설계 — 격에 맞는 이동 경험을 제공합니다.</p>
+              <a href="/services/vip-protocol-chauffeur/" class="link-arrow" aria-label="VIP 의전 상세 보기">자세히 보기</a>
+            </div>
+          </article>
+
+          <!-- 서비스 카드 3: 셔틀 운영 -->
+          <article class="svc-card">
+            <div class="svc-card-photo">
+              <img src="/assets/images/svc-shuttle.jpg"
+                   alt="셔틀 운영 현장 — 정류장과 안내 요원"
+                   loading="lazy" width="480" height="320">
+            </div>
+            <div class="svc-card-body">
+              <span class="svc-tag">셔틀 운영</span>
+              <h3>Shuttle Operation</h3>
+              <p>노선 설계부터 승하차 관리, 정시 운행 보장까지 — 참가자 수천 명의 이동을 매끄럽게.</p>
+              <a href="/services/shuttle-operation/" class="link-arrow" aria-label="셔틀 운영 상세 보기">자세히 보기</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         SECTION 5 — OPERATIONS: 운영 체계 차별화
+         설득 포인트: "어떻게 하는지" — 시스템과 프로세스 강조
+         ============================================================ -->
+    <section class="operations-highlight" aria-labelledby="ops-heading">
+      <div class="operations-highlight-inner">
+        <div class="section-badge">OUR OPERATIONS</div>
+        <h2 id="ops-heading">
+          운영을 시스템으로 바꾸는 세 가지 축
+        </h2>
+        <p class="section-desc">감이 아닌 체계, 경험이 아닌 데이터로 — GroundK의 운영 철학입니다.</p>
+
+        <div class="ops-grid">
+          <article class="ops-card">
+            <img src="/assets/images/ops-sop.jpg" alt="SOP 문서와 브리핑 현장" loading="lazy" width="400" height="260">
+            <h3>SOP 표준화</h3>
+            <p>사전 브리핑부터 비상 대응까지, 모든 운영 절차를 문서화·표준화합니다.</p>
+            <a href="/operations/sop/" class="link-arrow">자세히 보기</a>
+          </article>
+          <article class="ops-card">
+            <img src="/assets/images/ops-control.jpg" alt="관제실 모니터 화면" loading="lazy" width="400" height="260">
+            <h3>실시간 관제</h3>
+            <p>차량 위치, 탑승 상황, 돌발 이슈를 관제 센터에서 실시간 모니터링합니다.</p>
+            <a href="/operations/control-room/" class="link-arrow">자세히 보기</a>
+          </article>
+          <article class="ops-card">
+            <img src="/assets/images/ops-report.jpg" alt="리포트 대시보드 화면" loading="lazy" width="400" height="260">
+            <h3>리포팅</h3>
+            <p>운영 종료 후 정량 데이터와 개선 제안을 포함한 리포트를 제공합니다.</p>
+            <a href="/operations/reporting/" class="link-arrow">자세히 보기</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         SECTION 6 — KPI BAR: 정량 실적 (슬롯)
+         설득 포인트: 숫자로 규모감·신뢰 전달
+         ============================================================ -->
+    <section class="kpi-bar" aria-label="주요 실적 지표">
+      <div class="kpi-inner">
+        <!-- KPI 슬롯: 실제 수치로 교체 -->
+        <div class="kpi-item">
+          <span class="kpi-number" data-count="000">000+</span>
+          <span class="kpi-label">누적 프로젝트</span>
+        </div>
+        <div class="kpi-item">
+          <span class="kpi-number" data-count="000">000만+</span>
+          <span class="kpi-label">운송 인원</span>
+        </div>
+        <div class="kpi-item">
+          <span class="kpi-number" data-count="00">00+</span>
+          <span class="kpi-label">운영 년수</span>
+        </div>
+        <div class="kpi-item">
+          <span class="kpi-number" data-count="000">000+</span>
+          <span class="kpi-label">보유 차량</span>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         SECTION 7 — CASE STUDIES: 주요 도입 사례 미리보기 (슬롯)
+         설득 포인트: "실제로 한 일" 증거 제시
+         ============================================================ -->
+    <section class="case-preview" aria-labelledby="case-heading">
+      <div class="case-preview-inner">
+        <div class="section-badge">CASE STUDIES</div>
+        <h2 id="case-heading">검증된 운영 실적</h2>
+
+        <div class="case-grid">
+          <!-- 케이스 카드 슬롯 ×3 — 콘텐츠 추후 채움 -->
+          <article class="case-card">
+            <div class="case-card-photo">
+              <img src="/assets/images/case-placeholder.jpg" alt="도입사례 사진" loading="lazy" width="480" height="300">
+            </div>
+            <div class="case-card-body">
+              <span class="case-tag"><!-- 태그: 국제행사 / 정상회의 등 -->[행사 유형]</span>
+              <h3><!-- 제목 -->[행사명 / 프로젝트명]</h3>
+              <p><!-- 요약 -->[한 줄 요약: 규모, 기간, 핵심 성과]</p>
+              <dl class="case-meta">
+                <dt>규모</dt><dd>[0,000명 / 000대]</dd>
+                <dt>기간</dt><dd>[0일]</dd>
+              </dl>
+            </div>
+          </article>
+          <article class="case-card">
+            <div class="case-card-photo">
+              <img src="/assets/images/case-placeholder.jpg" alt="도입사례 사진" loading="lazy" width="480" height="300">
+            </div>
+            <div class="case-card-body">
+              <span class="case-tag">[행사 유형]</span>
+              <h3>[행사명 / 프로젝트명]</h3>
+              <p>[한 줄 요약]</p>
+              <dl class="case-meta">
+                <dt>규모</dt><dd>[0,000명 / 000대]</dd>
+                <dt>기간</dt><dd>[0일]</dd>
+              </dl>
+            </div>
+          </article>
+          <article class="case-card">
+            <div class="case-card-photo">
+              <img src="/assets/images/case-placeholder.jpg" alt="도입사례 사진" loading="lazy" width="480" height="300">
+            </div>
+            <div class="case-card-body">
+              <span class="case-tag">[행사 유형]</span>
+              <h3>[행사명 / 프로젝트명]</h3>
+              <p>[한 줄 요약]</p>
+              <dl class="case-meta">
+                <dt>규모</dt><dd>[0,000명 / 000대]</dd>
+                <dt>기간</dt><dd>[0일]</dd>
+              </dl>
+            </div>
+          </article>
+        </div>
+
+        <div class="section-more">
+          <a href="/case-studies/" class="btn-secondary">전체 사례 보기</a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         SECTION 8 — T‑RISEUP TEASER: 기술 플랫폼 소개
+         설득 포인트: 테크 차별화 — "시스템이 있는 회사"
+         ============================================================ -->
+    <section class="triseup-teaser" aria-labelledby="tr-heading">
+      <div class="triseup-teaser-inner">
+        <div class="triseup-content">
+          <div class="section-badge">T‑RISEUP</div>
+          <h2 id="tr-heading">운영을 시스템화하는 기술, T‑RiseUp</h2>
+          <p>
+            배차 자동화, 실시간 위치 추적, 운행 데이터 리포팅 —
+            T‑RiseUp은 GroundK의 운영 노하우를 디지털 플랫폼으로 구현합니다.
+          </p>
+          <a href="/t-riseup/" class="btn-secondary">플랫폼 살펴보기</a>
+        </div>
+        <div class="triseup-visual">
+          <img src="/assets/images/triseup-dashboard.jpg"
+               alt="T-RiseUp 관제 대시보드 화면"
+               loading="lazy" width="640" height="400">
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         SECTION 9 — FINAL CTA: 제안요청 유도
+         설득 포인트: 페이지 이탈 전 최종 전환 장치
+         ============================================================ -->
+    <section class="final-cta" aria-label="제안요청 유도">
+      <div class="final-cta-inner">
+        <h2>다음 행사의 이동 운영,<br>GroundK와 함께 설계하세요</h2>
+        <p>프로젝트 규모와 요구사항을 알려주시면, 맞춤 운영 제안서를 보내드립니다.</p>
+        <a href="/rfp/" class="btn-primary cta-rfp btn-lg">제안요청</a>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ========================================
+       FOOTER (partials/footer.html 복사)
+       ======================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <section class="footer-cta" aria-label="제안요청 유도">
+        <div class="footer-cta-content">
+          <h2>다음 행사의 이동 운영, GroundK와 함께 설계하세요</h2>
+          <p>프로젝트 규모와 요구사항을 알려주시면, 맞춤 운영 제안서를 보내드립니다.</p>
+          <a href="/rfp/" class="btn-primary cta-rfp">제안요청</a>
+        </div>
+      </section>
+      <div class="footer-body">
+        <div class="footer-col footer-brand">
+          <a href="/" class="footer-logo" aria-label="GroundK 홈"><img src="/assets/images/logo-white.svg" alt="GroundK" width="140" height="36"></a>
+          <address class="footer-address">서울특별시 강남구 테헤란로 000, 00층<br>대표이사: 홍길동 | 사업자등록번호: 000-00-00000</address>
+        </div>
+        <nav class="footer-col footer-links" aria-label="푸터 바로가기">
+          <h3 class="footer-heading">바로가기</h3>
+          <ul>
+            <li><a href="/pco-mice/">PCO·MICE</a></li>
+            <li><a href="/services/">서비스</a></li>
+            <li><a href="/operations/">운영체계</a></li>
+            <li><a href="/case-studies/">도입사례</a></li>
+            <li><a href="/t-riseup/">T‑RiseUp</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-col footer-support" aria-label="고객지원">
+          <h3 class="footer-heading">고객지원</h3>
+          <ul>
+            <li><a href="/rfp/">제안요청</a></li>
+            <li><a href="/newsroom/">뉴스룸</a></li>
+            <li><a href="/ir/">IR</a></li>
+          </ul>
+        </nav>
+        <div class="footer-col footer-contact">
+          <h3 class="footer-heading">문의</h3>
+          <ul>
+            <li><a href="tel:+82-2-0000-0000" aria-label="전화 문의">02-0000-0000</a></li>
+            <li><a href="mailto:contact@groundk.co.kr" aria-label="이메일 문의">contact@groundk.co.kr</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright">&copy; 2025 GroundK. All rights reserved.</p>
+        <ul class="footer-legal">
+          <li><a href="/privacy/">개인정보처리방침</a></li>
+          <li><a href="/terms/">이용약관</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>

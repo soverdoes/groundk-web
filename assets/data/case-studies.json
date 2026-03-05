@@ -1,0 +1,134 @@
+[
+  {
+    "id": "case-001",
+    "title_ko": "2024 서울 국제 기후변화 컨퍼런스 수송 운영",
+    "title_en": "2024 Seoul Int'l Climate Change Conference Transport Ops",
+    "period_ko": "2024.06.10 – 06.14 (5일)",
+    "period_en": "Jun 10–14, 2024 (5 days)",
+    "type": ["conference"],
+    "scope": ["mega-event", "vip", "shuttle"],
+    "city": "Seoul",
+    "scale": "L",
+    "summary_ko": "42개국 대표단 참석, 차량 280대 투입. VIP 의전 + 셔틀 + 수송 통합 운영. 정시 운행률 99.2%.",
+    "summary_en": "Delegates from 42 nations, 280 vehicles deployed. Integrated VIP protocol + shuttle + transport ops. 99.2% on-time rate.",
+    "photo": "/assets/images/case-placeholder.jpg",
+    "detail": {
+      "challenge_ko": "42개국 대표단의 동시 이동 수요, VIP 등급별 의전 차량 분리 배차, 공항~호텔~컨벤션 센터 3자 루트 최적화가 핵심 과제.",
+      "challenge_en": "Simultaneous transport demand for delegates from 42 nations, tiered VIP vehicle allocation, and 3-point route optimization between airport, hotel, and convention center.",
+      "approach_ko": "T-RiseUp 관제 시스템으로 실시간 배차 최적화. 등급별 SOP 매뉴얼 사전 배포. 리허설 2회 실시.",
+      "approach_en": "Real-time dispatch optimization via T-RiseUp control system. Tier-specific SOP manuals pre-distributed. Two rehearsal runs conducted.",
+      "result_ko": "정시 운행률 99.2%. 의전 클레임 0건. 대회 조직위 공식 감사장 수여.",
+      "result_en": "99.2% on-time rate. Zero protocol complaints. Official commendation from the organizing committee."
+    }
+  },
+  {
+    "id": "case-002",
+    "title_ko": "APEC 정상회의 의전 수송",
+    "title_en": "APEC Summit VIP Protocol Transport",
+    "period_ko": "2024.11.12 – 11.16 (5일)",
+    "period_en": "Nov 12–16, 2024 (5 days)",
+    "type": ["summit"],
+    "scope": ["vip"],
+    "city": "Seoul",
+    "scale": "M",
+    "summary_ko": "21개 경제체 정상급 의전. 보안 등급 A 차량 48대 투입. 국가별 의전 SOP 개별 수립.",
+    "summary_en": "Head-of-state protocol for 21 APEC economies. 48 security-grade A vehicles deployed. Nation-specific SOPs established.",
+    "photo": "/assets/images/case-placeholder.jpg",
+    "detail": {
+      "challenge_ko": "21개 경제체별 보안 요건 차이, 의전 서열에 따른 차량 배정, 경호 동선과 일반 동선 분리.",
+      "challenge_en": "Varying security requirements across 21 economies, rank-based vehicle assignment, and separation of security and general traffic routes.",
+      "approach_ko": "국가별 의전 매뉴얼 개별 작성. 경호팀과 합동 리허설 3회. GPS 기반 실시간 동선 모니터링.",
+      "approach_en": "Nation-specific protocol manuals drafted individually. Three joint rehearsals with security teams. GPS-based real-time route monitoring.",
+      "result_ko": "의전 사고 0건. 전 일정 정시 완료. 외교부 우수 협력사 선정.",
+      "result_en": "Zero protocol incidents. All schedules completed on time. Selected as MoFA's outstanding partner."
+    }
+  },
+  {
+    "id": "case-003",
+    "title_ko": "2024 인천 국제 마라톤 대회 수송 운영",
+    "title_en": "2024 Incheon Int'l Marathon Transport Operations",
+    "period_ko": "2024.10.05 – 10.06 (2일)",
+    "period_en": "Oct 5–6, 2024 (2 days)",
+    "type": ["sports"],
+    "scope": ["mega-event", "shuttle"],
+    "city": "Incheon",
+    "scale": "L",
+    "summary_ko": "참가자 35,000명 규모. 셔틀 버스 120대 + 화물 차량 30대. 집결지 8개소 동시 운영.",
+    "summary_en": "35,000 participants. 120 shuttle buses + 30 cargo vehicles. 8 gathering points operated simultaneously.",
+    "photo": "/assets/images/case-placeholder.jpg",
+    "detail": {
+      "challenge_ko": "35,000명을 새벽 4시부터 2시간 내 집결지→출발선으로 수송. 교통 통제 구간과의 동선 조율.",
+      "challenge_en": "Transporting 35,000 people from gathering points to the start line within 2 hours starting 4 AM. Route coordination with traffic control zones.",
+      "approach_ko": "8개 집결지별 전담팀 배치. 5분 간격 배차 스케줄. T-RiseUp 실시간 탑승 현황 모니터링.",
+      "approach_en": "Dedicated teams at each of 8 gathering points. 5-minute interval dispatch schedules. T-RiseUp real-time boarding status monitoring.",
+      "result_ko": "전원 출발선 도착 완료(06:00 마감). 셔틀 운행 지연 평균 1.8분. 대회 측 재계약 체결.",
+      "result_en": "All participants arrived at start line by 06:00 deadline. Average shuttle delay: 1.8 minutes. Contract renewed by the organizer."
+    }
+  },
+  {
+    "id": "case-004",
+    "title_ko": "글로벌 IT 기업 연례 타운홀 셔틀",
+    "title_en": "Global IT Corp Annual Townhall Shuttle Service",
+    "period_ko": "2024.09.20 – 09.21 (2일)",
+    "period_en": "Sep 20–21, 2024 (2 days)",
+    "type": ["corporate"],
+    "scope": ["shuttle"],
+    "city": "Busan",
+    "scale": "S",
+    "summary_ko": "임직원 2,500명 대상. 셔틀 버스 15대 운영. KTX역~호텔~행사장 3루트. 정시율 100%.",
+    "summary_en": "2,500 employees. 15 shuttle buses. 3 routes: KTX station – hotel – venue. 100% on-time rate.",
+    "photo": "/assets/images/case-placeholder.jpg",
+    "detail": {
+      "challenge_ko": "KTX 도착 시간대 분산에 따른 유동적 배차, 해운대 교통 혼잡 구간 우회 루트 확보.",
+      "challenge_en": "Flexible dispatching due to staggered KTX arrivals, securing bypass routes around Haeundae traffic congestion.",
+      "approach_ko": "KTX 도착 시간대별 배차 테이블 사전 작성. 우회 루트 3개 사전 답사. 실시간 카카오 T 연동.",
+      "approach_en": "Pre-built dispatch tables by KTX arrival time slots. Three bypass routes surveyed in advance. Real-time Kakao T integration.",
+      "result_ko": "정시율 100%. 고객사 NPS 92점. 차기 행사 수의계약 체결.",
+      "result_en": "100% on-time rate. Client NPS score: 92. Direct contract awarded for next event."
+    }
+  },
+  {
+    "id": "case-005",
+    "title_ko": "2024 부산 국제 로봇 박람회 수송·셔틀",
+    "title_en": "2024 Busan Int'l Robotics Expo Transport & Shuttle",
+    "period_ko": "2024.07.15 – 07.19 (5일)",
+    "period_en": "Jul 15–19, 2024 (5 days)",
+    "type": ["exhibition"],
+    "scope": ["mega-event", "shuttle"],
+    "city": "Busan",
+    "scale": "M",
+    "summary_ko": "5일간 방문객 48,000명. BEXCO~주요 호텔 셔틀 25대 + 전시 화물 수송 10대. 일별 리포트 제공.",
+    "summary_en": "48,000 visitors over 5 days. 25 shuttles between BEXCO and hotels + 10 cargo vehicles for exhibits. Daily reports provided.",
+    "photo": "/assets/images/case-placeholder.jpg",
+    "detail": {
+      "challenge_ko": "5일간 일별 편차가 큰 방문객 수요 대응, 대형 전시품 화물 수송과 관람객 셔틀 동시 운영.",
+      "challenge_en": "Handling daily visitor demand fluctuations over 5 days, simultaneous management of exhibit cargo transport and visitor shuttles.",
+      "approach_ko": "일별 수요 예측 기반 유동 배차. 화물/관람객 동선 완전 분리. T-RiseUp 일별 운영 리포트 자동 생성.",
+      "approach_en": "Demand-forecasted daily flexible dispatch. Complete separation of cargo and visitor routes. T-RiseUp automated daily operations reports.",
+      "result_ko": "셔틀 이용자 만족도 4.7/5.0. 화물 파손 0건. 박람회 사무국 공식 감사 서한 수령.",
+      "result_en": "Shuttle user satisfaction: 4.7/5.0. Zero cargo damage. Official letter of appreciation from expo secretariat."
+    }
+  },
+  {
+    "id": "case-006",
+    "title_ko": "제주 국제 관광 포럼 VIP 의전·셔틀",
+    "title_en": "Jeju Int'l Tourism Forum VIP Protocol & Shuttle",
+    "period_ko": "2024.04.22 – 04.24 (3일)",
+    "period_en": "Apr 22–24, 2024 (3 days)",
+    "type": ["conference"],
+    "scope": ["vip", "shuttle"],
+    "city": "Jeju",
+    "scale": "M",
+    "summary_ko": "12개국 관광장관 참석. VIP 의전 차량 18대 + 일반 셔틀 20대. 공항~리조트~포럼장 통합 운영.",
+    "summary_en": "Tourism ministers from 12 countries. 18 VIP vehicles + 20 general shuttles. Integrated airport–resort–forum venue ops.",
+    "photo": "/assets/images/case-placeholder.jpg",
+    "detail": {
+      "challenge_ko": "제주 도로 특성상 우회 루트 제한, VIP와 일반 참가자 동선 분리, 기상 변수(태풍 경보) 대응.",
+      "challenge_en": "Limited bypass routes due to Jeju's road network, VIP and general attendee route separation, weather contingency (typhoon warning).",
+      "approach_ko": "제주 현지 파트너사와 합동 운영. 기상 악화 시 대체 동선 3안 사전 수립. VIP 전용 대기 라운지 연계.",
+      "approach_en": "Joint operations with local Jeju partner. Three contingency route plans for adverse weather. VIP dedicated waiting lounge coordination.",
+      "result_ko": "태풍 접근에도 전 일정 정상 수행. VIP 만족도 100%. 제주관광공사 우수 파트너 인증.",
+      "result_en": "All schedules completed despite approaching typhoon. 100% VIP satisfaction. Certified as outstanding partner by Jeju Tourism Organization."
+    }
+  }
+]

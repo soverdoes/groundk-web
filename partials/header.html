@@ -1,0 +1,131 @@
+<!-- FILE: partials/header.html -->
+<!--
+  GroundK 공통 헤더 — 각 페이지에 복사하여 사용
+  ⚠ 페이지별 수정 포인트:
+    1. lang="ko" / lang="en" (html 태그)
+    2. 언어 토글 링크 경로
+    3. aria-current="page" 활성 메뉴 표시
+-->
+
+<header class="site-header" role="banner">
+  <div class="header-inner">
+
+    <!-- ── 로고 ── -->
+    <a href="/" class="logo" aria-label="GroundK 홈으로 이동">
+      <img src="/assets/images/logo.svg" alt="GroundK" width="160" height="40">
+    </a>
+
+    <!-- ── 주 내비게이션 ── -->
+    <nav class="gnb" aria-label="주 메뉴">
+      <ul class="gnb-list" role="menubar">
+
+        <li class="gnb-item" role="none">
+          <a href="/pco-mice/" role="menuitem">PCO·MICE</a>
+        </li>
+
+        <!-- 서비스 (드롭다운) -->
+        <li class="gnb-item has-sub" role="none">
+          <a href="/services/" role="menuitem" aria-haspopup="true" aria-expanded="false">
+            서비스
+          </a>
+          <ul class="gnb-sub" role="menu" aria-label="서비스 하위 메뉴">
+            <li role="none"><a href="/services/mega-event-transportation/" role="menuitem">대형행사 수송</a></li>
+            <li role="none"><a href="/services/vip-protocol-chauffeur/" role="menuitem">VIP 의전</a></li>
+            <li role="none"><a href="/services/shuttle-operation/" role="menuitem">셔틀 운영</a></li>
+          </ul>
+        </li>
+
+        <!-- 운영체계 (드롭다운) -->
+        <li class="gnb-item has-sub" role="none">
+          <a href="/operations/" role="menuitem" aria-haspopup="true" aria-expanded="false">
+            운영체계
+          </a>
+          <ul class="gnb-sub" role="menu" aria-label="운영체계 하위 메뉴">
+            <li role="none"><a href="/operations/sop/" role="menuitem">SOP 표준화</a></li>
+            <li role="none"><a href="/operations/control-room/" role="menuitem">실시간 관제</a></li>
+            <li role="none"><a href="/operations/reporting/" role="menuitem">리포팅</a></li>
+          </ul>
+        </li>
+
+        <li class="gnb-item" role="none">
+          <a href="/case-studies/" role="menuitem">도입사례</a>
+        </li>
+
+        <li class="gnb-item" role="none">
+          <a href="/t-riseup/" role="menuitem">T‑RiseUp</a>
+        </li>
+
+        <li class="gnb-item" role="none">
+          <a href="/newsroom/" role="menuitem">뉴스룸</a>
+        </li>
+
+        <li class="gnb-item" role="none">
+          <a href="/ir/" role="menuitem">IR</a>
+        </li>
+
+      </ul>
+    </nav>
+
+    <!-- ── 헤더 우측: 언어토글 + CTA ── -->
+    <div class="header-actions">
+
+      <!-- 언어 토글 -->
+      <div class="lang-toggle" role="navigation" aria-label="언어 선택">
+        <a href="/" class="lang-btn active" aria-current="true" lang="ko">KR</a>
+        <span class="lang-divider" aria-hidden="true">|</span>
+        <a href="/en/" class="lang-btn" lang="en">EN</a>
+      </div>
+
+      <!-- Primary CTA -->
+      <a href="/rfp/" class="btn-primary cta-rfp">제안요청</a>
+
+    </div>
+
+    <!-- ── 모바일 햄버거 ── -->
+    <button class="mobile-toggle" type="button"
+            aria-label="메뉴 열기" aria-expanded="false" aria-controls="mobile-nav">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+
+  </div><!-- /.header-inner -->
+
+  <!-- ── 모바일 내비게이션 패널 ── -->
+  <div id="mobile-nav" class="mobile-nav" aria-hidden="true" role="dialog" aria-label="모바일 메뉴">
+    <nav aria-label="모바일 주 메뉴">
+      <ul class="mobile-nav-list">
+        <li><a href="/pco-mice/">PCO·MICE</a></li>
+        <li>
+          <button class="mobile-sub-toggle" aria-expanded="false">서비스</button>
+          <ul class="mobile-sub">
+            <li><a href="/services/">서비스 전체</a></li>
+            <li><a href="/services/mega-event-transportation/">대형행사 수송</a></li>
+            <li><a href="/services/vip-protocol-chauffeur/">VIP 의전</a></li>
+            <li><a href="/services/shuttle-operation/">셔틀 운영</a></li>
+          </ul>
+        </li>
+        <li>
+          <button class="mobile-sub-toggle" aria-expanded="false">운영체계</button>
+          <ul class="mobile-sub">
+            <li><a href="/operations/">운영체계 전체</a></li>
+            <li><a href="/operations/sop/">SOP 표준화</a></li>
+            <li><a href="/operations/control-room/">실시간 관제</a></li>
+            <li><a href="/operations/reporting/">리포팅</a></li>
+          </ul>
+        </li>
+        <li><a href="/case-studies/">도입사례</a></li>
+        <li><a href="/t-riseup/">T‑RiseUp</a></li>
+        <li><a href="/newsroom/">뉴스룸</a></li>
+        <li><a href="/ir/">IR</a></li>
+      </ul>
+      <a href="/rfp/" class="btn-primary cta-rfp mobile-cta">제안요청</a>
+    </nav>
+  </div>
+
+</header>
+
+<!-- ── 모바일 하단 고정 CTA (선택: 전환 강화) ── -->
+<div class="mobile-bottom-cta" aria-hidden="false">
+  <a href="/rfp/" class="btn-primary cta-rfp">지금 제안요청 하기</a>
+</div>

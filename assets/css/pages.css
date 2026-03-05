@@ -1,0 +1,461 @@
+/* FILE: assets/css/pages.css
+   ──────────────────────────────────────────────
+   Page-specific overrides — kept minimal.
+   Most styling comes from components.css.
+   ────────────────────────────────────────────── */
+
+
+/* ============================================
+   1. HOME PAGE — Hero full-bleed
+   ============================================ */
+.hero {
+  position: relative;
+  overflow: hidden;
+  background: var(--bg-deep);
+  padding-top: var(--sp-16);
+  padding-bottom: var(--sp-16);
+}
+
+/* Background gradient overlay for photo heroes */
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(11,17,32,0.92) 0%,
+    rgba(11,17,32,0.60) 50%,
+    rgba(11,17,32,0.30) 100%
+  );
+  z-index: 1;
+  pointer-events: none;
+}
+
+.hero .hero-inner {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-title {
+  margin-bottom: var(--sp-6);
+}
+.hero-title strong {
+  color: var(--primary-400);
+  font-weight: var(--fw-bold);
+}
+
+.hero-sub {
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  color: var(--text-muted);
+  margin-bottom: var(--sp-8);
+  max-width: 55ch;
+}
+
+.hero-actions {
+  display: flex;
+  gap: var(--sp-4);
+  flex-wrap: wrap;
+}
+
+.hero-visual {
+  position: relative;
+}
+.hero-visual img {
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg);
+}
+
+/* ── Sub-page hero (no split, text only) ── */
+.hero--sub {
+  text-align: center;
+  padding-top: var(--sp-20);
+}
+.hero--sub::before {
+  background: linear-gradient(
+    180deg,
+    rgba(11,17,32,0.95) 0%,
+    var(--bg-base) 100%
+  );
+}
+.hero--sub .hero-content {
+  align-items: center;
+}
+.hero--sub .hero-sub {
+  margin-inline: auto;
+}
+
+/* ── PCO hero variant — stronger CTA emphasis ── */
+.hero--pco .hero-content {
+  justify-content: center;
+}
+.hero--pco .hero-title {
+  font-size: clamp(1.75rem, 4.5vw, 3rem);
+}
+
+/* ── Service detail hero ── */
+.hero--service {
+  padding-top: var(--sp-12);
+}
+.hero--service .svc-tag {
+  margin-bottom: var(--sp-3);
+}
+
+/* ── Operations detail hero ── */
+.hero--ops {
+  padding-top: var(--sp-12);
+}
+
+/* ── T-RiseUp hero ── */
+.hero--triseup {
+  background: var(--bg-deep);
+}
+.hero-lead {
+  font-size: clamp(1.125rem, 2vw, 1.5rem);
+  color: var(--accent-400);
+  font-weight: var(--fw-semibold);
+  margin-bottom: var(--sp-4);
+}
+
+
+/* ============================================
+   2. PAIN → SOLUTION SECTION
+   ============================================ */
+.pain-solution {
+  background: var(--bg-base);
+}
+.pain-solution-inner {
+  text-align: center;
+}
+.pain-solution h2 {
+  margin-bottom: var(--sp-4);
+}
+
+
+/* ============================================
+   3. SERVICES OVERVIEW & OPERATIONS HIGHLIGHT
+   ============================================ */
+.services-overview,
+.operations-highlight {
+  background: var(--bg-base);
+}
+.services-overview h2,
+.operations-highlight h2 {
+  margin-bottom: var(--sp-2);
+}
+
+
+/* ============================================
+   4. CASE PREVIEW (home)
+   ============================================ */
+.case-preview {
+  background: var(--bg-surface);
+}
+
+
+/* ============================================
+   5. T-RISEUP TEASER (home)
+   ============================================ */
+.triseup-teaser {
+  background: var(--bg-deep);
+  position: relative;
+  overflow: hidden;
+}
+/* Subtle tech glow */
+.triseup-teaser::after {
+  content: '';
+  position: absolute;
+  right: -10%;
+  top: -50%;
+  width: 50%;
+  height: 200%;
+  background: radial-gradient(ellipse, rgba(6,182,212,0.06), transparent 70%);
+  pointer-events: none;
+}
+.triseup-teaser .triseup-content {
+  position: relative;
+  z-index: 1;
+}
+.triseup-teaser .triseup-visual {
+  position: relative;
+  z-index: 1;
+}
+.triseup-teaser .triseup-visual img {
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--glow-accent);
+}
+
+
+/* ============================================
+   6. FINAL CTA SECTION
+   ============================================ */
+.final-cta {
+  background: var(--gradient-purple);
+  position: relative;
+  overflow: hidden;
+}
+.final-cta::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:
+    radial-gradient(ellipse at 20% 50%, rgba(37,99,235,0.15), transparent 60%),
+    radial-gradient(ellipse at 80% 50%, rgba(124,58,237,0.15), transparent 60%);
+  pointer-events: none;
+}
+.final-cta-inner {
+  position: relative;
+  z-index: 1;
+}
+.final-cta h2 {
+  margin-bottom: var(--sp-4);
+}
+.final-cta p {
+  color: var(--text-muted);
+  margin-bottom: var(--sp-8);
+  margin-inline: auto;
+}
+
+
+/* ============================================
+   7. CROSS-LINK SECTION
+   ============================================ */
+.cross-link {
+  background: var(--bg-surface);
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+}
+.cross-link h2 {
+  margin-bottom: var(--sp-3);
+}
+.cross-link p {
+  color: var(--text-muted);
+  margin-bottom: var(--sp-6);
+  margin-inline: auto;
+}
+
+
+/* ============================================
+   8. PCO PAGE SPECIFICS
+   ============================================ */
+.pco-pain {
+  background: var(--bg-surface);
+}
+.pco-pain h2 {
+  text-align: center;
+  margin-bottom: var(--sp-4);
+}
+
+.pco-solution h2 {
+  text-align: center;
+  margin-bottom: var(--sp-4);
+}
+
+.pco-process {
+  background: var(--bg-surface);
+}
+.pco-process h2 {
+  text-align: center;
+  margin-bottom: var(--sp-4);
+}
+
+.case-highlight h2 {
+  margin-bottom: var(--sp-8);
+}
+.case-highlight > div {
+  text-align: center;
+}
+.case-highlight .btn-secondary {
+  margin-top: var(--sp-8);
+}
+
+
+/* ============================================
+   9. OPERATIONS DETAIL PAGES
+   ============================================ */
+.ops-detail h2 {
+  text-align: center;
+  margin-bottom: var(--sp-2);
+}
+
+.ops-flow,
+.ops-visual {
+  text-align: center;
+  background: var(--bg-surface);
+}
+.ops-flow img,
+.ops-visual img {
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-subtle);
+  margin-inline: auto;
+}
+
+.sibling-links {
+  background: var(--bg-base);
+}
+.sibling-links h2 {
+  text-align: center;
+  margin-bottom: var(--sp-8);
+}
+
+
+/* ============================================
+   10. RFP PAGE SPECIFICS
+   ============================================ */
+.rfp-intro {
+  background: var(--bg-deep);
+  padding-top: var(--sp-16);
+  padding-bottom: var(--sp-8);
+}
+.rfp-intro h1 {
+  margin-bottom: var(--sp-4);
+}
+.rfp-lead {
+  font-size: clamp(1.125rem, 2vw, 1.375rem);
+  color: var(--text-secondary);
+  margin-bottom: var(--sp-3);
+}
+.rfp-note {
+  font-size: 0.9375rem;
+  color: var(--text-dim);
+}
+
+.rfp-form-section {
+  padding-block: var(--sp-12);
+}
+.rfp-form fieldset {
+  padding: var(--sp-8);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+}
+.rfp-form legend {
+  font-size: 1.25rem;
+  font-weight: var(--fw-semibold);
+  color: var(--text-primary);
+  margin-bottom: var(--sp-8);
+}
+
+.rfp-reassurance {
+  background: var(--bg-surface);
+  border-top: 1px solid var(--border-subtle);
+}
+
+
+/* ============================================
+   11. T-RISEUP PAGE
+   ============================================ */
+.tr-overview {
+  text-align: center;
+}
+.tr-overview-visual {
+  margin-top: var(--sp-10);
+}
+.tr-overview-visual img {
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--border-subtle);
+  margin-inline: auto;
+}
+
+.tr-features h2 {
+  text-align: center;
+  margin-bottom: var(--sp-2);
+}
+
+.tr-screenshots {
+  background: var(--bg-surface);
+}
+.tr-screenshots h2 {
+  text-align: center;
+  margin-bottom: var(--sp-2);
+}
+
+
+/* ============================================
+   12. IR PAGE
+   ============================================ */
+.ir-overview h2,
+.ir-financials h2,
+.ir-downloads h2 {
+  margin-bottom: var(--sp-2);
+}
+
+.ir-financials {
+  background: var(--bg-surface);
+}
+
+.ir-downloads {
+  background: var(--bg-base);
+}
+
+
+/* ============================================
+   13. NEWSROOM PAGE
+   ============================================ */
+.news-list {
+  background: var(--bg-base);
+}
+
+
+/* ============================================
+   14. CASE STUDIES PAGE
+   ============================================ */
+.case-filter {
+  padding-block: var(--sp-6);
+  background: var(--bg-base);
+  position: sticky;
+  top: var(--header-h);
+  z-index: calc(var(--z-sticky) - 1);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+
+/* ============================================
+   15. RESPONSIVE PAGE OVERRIDES
+   ============================================ */
+@media (max-width: 768px) {
+  .hero {
+    padding-top: var(--sp-10);
+    padding-bottom: var(--sp-10);
+  }
+
+  .hero--sub {
+    padding-top: var(--sp-16);
+  }
+
+  .hero-visual img {
+    border-radius: var(--radius-lg);
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .hero-actions .btn-primary,
+  .hero-actions .btn-secondary {
+    text-align: center;
+  }
+
+  .rfp-form fieldset {
+    padding: var(--sp-6) var(--sp-4);
+  }
+
+  .download-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--sp-3);
+  }
+  .dl-meta {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
