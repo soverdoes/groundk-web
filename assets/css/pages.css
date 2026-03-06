@@ -63,35 +63,51 @@
   flex-wrap: wrap;
 }
 
-/* ── Full background image hero ── */
+/* ── Full-page background image hero ── */
 .hero--fullbg {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 100vh;
+  height: 100vh;
+  min-height: 600px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding-top: var(--sp-20);
-  padding-bottom: var(--sp-20);
+  padding: 0;
 }
 .hero--fullbg::before {
-  background: rgba(11,17,32,0.7);
+  background: rgba(11,17,32,0.65);
 }
 .hero--fullbg .hero-inner {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 .hero--fullbg .hero-content {
   align-items: center;
-  max-width: 800px;
+  max-width: 900px;
+}
+.hero--fullbg .hero-title {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  line-height: 1.15;
+  margin-bottom: var(--sp-6);
 }
 .hero--fullbg .hero-sub {
   margin-inline: auto;
+  font-size: clamp(1.125rem, 2vw, 1.5rem);
 }
 .hero--fullbg .hero-actions {
   justify-content: center;
+  margin-top: var(--sp-8);
+}
+.hero--fullbg .hero-actions .btn-primary {
+  font-size: 1.125rem;
+  padding: var(--sp-4) var(--sp-10);
+}
+.hero--fullbg .hero-actions .btn-secondary {
+  font-size: 1.125rem;
+  padding: var(--sp-4) var(--sp-10);
 }
 
 /* ── Sub-page hero (no split, text only) ── */
