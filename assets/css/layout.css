@@ -150,6 +150,10 @@ main {
   gap: var(--sp-12);
   align-items: center;
 }
+.hero--fullbg .hero-inner {
+  display: flex;
+  grid-template-columns: none;
+}
 
 /* ── 3-column grid ── */
 .svc-grid,
