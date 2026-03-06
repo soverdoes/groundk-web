@@ -136,6 +136,10 @@ section {
 main {
   padding-top: var(--header-h);
 }
+/* Remove top padding when hero is full-page */
+main:has(.hero--fullbg) {
+  padding-top: 0;
+}
 
 
 /* ============================================

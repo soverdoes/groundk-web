@@ -74,7 +74,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 0;
+  padding: var(--header-h) 0 0;
 }
 .hero--fullbg::before {
   background: rgba(11,17,32,0.65);
